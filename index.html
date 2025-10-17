@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazon</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-pb3VM9y7Yf8xNfT1bL7PZKxAt+Y1E3KlpX5zI4zE+N4AFtI3bD4V2Y4z9fTtHgKz8RykFh1AjT9cn0lpOnhBQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Your CSS file -->
+    <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -11,71 +23,93 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
-
     <header>
-        <!-- AMAZON LOGO (BOX 1) -->
-        <div class="navbar">
-            <div class="nav-logo border">
-                <div class="logo"></div>
-            </div>
-            <!-- NAC ADDRESS (BOX 2) -->
-             <div class="nav-address border">
-                <p class="add-first">Delivering to</p>
-                <div class="address-icon"> 
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p class="add-second">India</p>
-                </div>
-                </div>
-                <!-- SEARCH BAR (BOX 3) -->
-                 <div class="search-bar">
-                    <select class="option-bar">
-                        <option value="all">All</option>
-                        <option value="electronics">Electronics</option>
-                        <option value="clothing">Clothing</option>
-                        <option value="books">Books</option>
-                        <option value="home">Home</option>
-                        <option value="groceries">Groceries</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <div class="search-amazon">
-                        <input type text placeholder="search-product here" class="search-product" />
-                        
-                    </div>
-                    <div class="search-logo">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                 </div>
-                 <!-- <div class="language-box">
-                  <div class="flag-logo"></div>
-                  <select class="languages" >
-                    <option value ="English">EN</option>
-                    <option value ="Spanish">ES</option>
-                    <option value ="French">FR</option>
-                  </select>
-                 </div> -->
-                 
-                
-                <div class="sign-in">
-                  <p> <span>  Hello, Sign in </span></p>
-                  <p class="second "> Account & Lists</p>
-                  
-
-                </div>
-
-                 </div>
-                
-<!-- START ANYTHING FROM HERE ABOVE -->
-             </div>
+      <!-- AMAZON NAVBAR -->
+      <div class="navbar">
+        <!-- BOX 1: LOGO -->
+        <div class="nav-logo border">
+          <div class="logo"></div>
         </div>
 
-        <div>
-          
+        <!-- BOX 2: ADDRESS -->
+        <div class="nav-address border">
+          <p class="add-first">Delivering to</p>
+          <div class="address-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="add-second">India</p>
+          </div>
         </div>
+
+        <!-- BOX 3: SEARCH BAR -->
+        <div class="search-bar">
+          <select class="option-bar">
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+            <option value="books">Books</option>
+            <option value="home">Home</option>
+            <option value="groceries">Groceries</option>
+            <option value="other">Other</option>
+          </select>
+
+          <div class="search-amazon">
+            <input
+              type="text"
+              placeholder="Search product here"
+              class="search-product"
+            />
+          </div>
+
+          <div class="search-logo">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <!-- BOX 4: SIGN IN -->
+        <div class="sign-in border">
+          <p><span>Hello, Sign in</span></p>
+          <p class="second">Account & Lists</p>
+        </div>
+
+        <!-- BOX 5: RETURNS -->
+        <div class="nav-return border">
+          <p><span>Returns</span></p>
+          <p class="second">& Orders</p>
+        </div>
+
+        <!-- BOX 6: CART -->
+        <div class="nav-cart border">
+          <i class="fa-solid fa-cart-shopping"></i>
+          cart
+        </div>
+      </div>
+
+      <!-- PANEL BAR -->
+       <div class="panel">
+        <div class="panel-all border ">
+          <i class="fa-solid fa-bars"></i>
+          All
+        </div>
+
+        <div class="panel-options ">
+          <a> <p> Today's Deals </p> </a>
+          <p>Prime Video </p>
+          <p>Registry</p>
+          <p>Gift Cards</p>
+          <p>Customer Service </p>
+          <p>Sell</p>
+        </div>
+
+        <div class="panel-deals">
+          Shop deals in Electronics
+
+        </div>
+
+       </div>
+      
     </header>
-    
-    
   </body>
 </html>

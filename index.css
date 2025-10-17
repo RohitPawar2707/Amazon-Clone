@@ -74,12 +74,20 @@
     /* justify-content: space-evenly; */
     align-items: center;
     border-radius: 4px;
-    padding: 10px 4px 10px 3px;
+    /* padding: 10px 4px 10px 3px; */
+    
 }
+
+.search-bar:hover {
+    border: 2px solid orange
+
+}
+         
+ 
 
 .option-bar{
     width:50px;
-    height: 35px;
+    height: 40px;
     display: flex;
     padding-left: 5px;
     font-size: 14px;
@@ -91,7 +99,7 @@
 
 .search-product{
     width: 550px;
-    height: 30px;
+    height: 35px;
     margin-right: none  ;
 
     
@@ -100,7 +108,7 @@
 }
 
 .search-logo{
-    height:35px;
+    height:40px;
     width: 45px;
     display:flex;
     justify-content:center;
@@ -130,9 +138,67 @@
 
 .span{
     font-size: 0.7rem;
-
+    margin: 9px 0px 0px ;
 }
+
 
 .second{
     font-size: 0.85rem  ;
+    font-weight: 700    ;
+}   
+
+/* /BOX 6  */
+.nav-cart i {
+    font-size: 30px;
+   
 }
+.nav-cart:hover{
+    /* border: 1.5px solid white; */
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #57606f;
+}
+
+.nav-cart{
+    font-weight:  700;
+    font-size: 14px
+}
+ /* /panel  */
+
+ .panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+
+ .panel-options p {
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+    padding: 8px 5px 8px 5px;
+    
+ }
+
+ .panel-options {
+    width: 70%;
+ }
+
+ .panel-all {
+    font-size: 12px;
+    font-size: 0.85rem;
+ }
+
+ .panel-options p:hover {
+    background-color: #57606f;
+    border-radius: 4px;
+    cursor: pointer;
+    
+ }
+
+
+ 
+
+
+
