@@ -4,6 +4,50 @@
     border: border-box;
 }
 
+/* Make all images and videos resize automatically */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjust layout for tablets */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Adjust layout for phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+
+/* Adjust layout for tablets */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Adjust layout for phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+
 .navbar{
     height: 50px ;
     background-color:black;
@@ -171,31 +215,129 @@
     display: flex;
     color: white;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
  }
 
  .panel-options p {
     display: inline-block;
-    margin: 0px 10px 0px 10px;
+    
+    /* margin: 0px 5px 0px 5px; */
     padding: 8px 5px 8px 5px;
+    animation: fadeSlide 1s ease-in-out forwards;
+    font-size: 1 rem ;
+    font-weight: none ;
+    margin-left : 10px;
     
  }
 
  .panel-options {
-    width: 70%;
+    /* width: 70%; */
+    font-size: 15px;
  }
 
  .panel-all {
-    font-size: 12px;
-    font-size: 0.85rem;
+    font-size: 20px;
+    animation: fadeSlide 1s ease-in-out forwards;
+    width: 60px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 500;
+    height: 34px ;
  }
+
+ .panel-all:hover {
+    background-color: #57606f;
+    border-radius: 4px;
+    cursor: pointer;  
+ }
+
 
  .panel-options p:hover {
     background-color: #57606f;
     border-radius: 4px;
-    cursor: pointer;
-    
+    cursor: pointer;  
  }
+
+ @keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HERO-SECTION */
+
+.background{
+  background-image: url("images/front image.jpg");
+  height:350px;
+  background-size: cover;
+  /* background-position: center;
+  display: flex;  */
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f1f1f1; */
+
+}
+
+/* SHOPING SECTION */
+
+.shoping-items{
+  display: flex;
+  justify-content: space-evenly;
+  background: linear-gradient(to bottom, #ff512f, #f09819);
+  /* justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: -100px;
+  margin-bottom: 20px; */
+}
+
+
+.box{
+  height: 400px ;
+  /* border: 2px solid black; */
+  width:23%;
+  background-color: #FFFFFF;
+  color: #0F1111;
+  padding: 20px 0px 15px; 
+}
+
+.box1-content{
+   margin-left:1rem ;
+   margin-right: 1rem;
+  
+}
+
+.box-image{
+  height: 300px;
+  padding: 20px 0px 15px ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 1rem;
+  /* margin-left:1rem ;
+  margin-right: 1rem; */
+}
+
+.shop-gaming{
+  margin-top: 1rem;
+  color: #2162A1;
+}
+
+/* box 2 styling */
+
+.box1-image {
+  height: 20px;
+  width: 20px;
+  
+}
+
 
 
  
